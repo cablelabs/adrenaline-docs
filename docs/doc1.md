@@ -1,6 +1,8 @@
-# adrenaline-docs
-Documentation site for Adrenaline project.
-
+---
+id: doc1
+title: Documentation
+sidebar_label: Documentation
+---
 ## Overview
 This project's documentation is managed by [Docusaurus](https://docusaurus.io).
 Refer to the docusaurus website for more detailed documentation on how to setup
