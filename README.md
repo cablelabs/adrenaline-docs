@@ -51,7 +51,7 @@ npm install
 npm start
 ```
 
-### Docker (not working)
+### Docker
 `docker-compose up`
 
 ## Publish to Github Pages
