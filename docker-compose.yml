@@ -2,7 +2,9 @@ version: "3"
 
 services:
   docusaurus:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
     ports:
       - 3000:3000
       - 35729:35729
