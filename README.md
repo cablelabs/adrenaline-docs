@@ -21,6 +21,7 @@ within this folder doesn't reflect how it's displayed.  The display is configure
 custom pages that you can link to from the main navigation or elsewhere.  The main navigation
 is configured in `siteConfig.js`.
 - **static** - Put images and css here.
+- **docker-compose.yml** - Orchestrate the development environment
 
 ## Docs
 Documentation content is saved as markdown files to the `/docs` folder.  The docs can link to each other,
@@ -52,7 +53,12 @@ npm start
 ```
 
 ### Docker
-`docker-compose up`
+`docker-compose up --build`
+
+## Build production image
+Run the `docker build` command from the root of the repository.
+
+`docker build -t IMAGE_TAG .`
 
 ## Publish to Github Pages
 These commands will build the static documentation website and commit the changes
