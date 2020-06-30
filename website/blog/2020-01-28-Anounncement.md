@@ -1,7 +1,7 @@
 ---
 title: "Give your Edge an Adrenaline Boost: Using Kubernetes to Orchestrate FPGAs and GPU"
 author: Randy Levensalor
-authorURL: http://twitter.com/randy
+authorURL: http://twitter.com/randylevensalor
 authorImageURL: https://www-res.cablelabs.com/wp-content/uploads/2014/11/28093915/Levensalor_Randy-96x96.png
 ---
 
