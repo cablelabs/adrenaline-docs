@@ -5,6 +5,8 @@ authorURL: http://twitter.com/randy
 authorImageURL: https://www-res.cablelabs.com/wp-content/uploads/2014/11/28093915/Levensalor_Randy-96x96.png
 ---
 
+This post first published on the [CableLabs blog](https://www.cablelabs.com/edge-adrenaline-boost-kubernetes-orchestrate-fpgas-gpu).
+
 Over the past year, we’ve been experimenting with field-programmable gate arrays (FPGAs) and graphics processing units (GPUs) to improve edge compute performance and reduce the overall cost of edge deployments.
 
 Unless you’ve been under a rock for the past 2 years, you’ve heard all the excitement about edge computing. For the uninitiated, edge computing allows for applications that previously required special hardware to be on customer premises to run on systems located near customers. These workloads require either very low latency or very high bandwidth, which means they don’t do well in the cloud. With many of these low-latency applications, microseconds matter. At CableLabs, we’ve been defining a reference architecture and adapting [Kubernetes](https://kubernetes.io/) to better meet the low-latency needs of edge computing workloads.
