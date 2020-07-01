@@ -22,7 +22,7 @@ const users = [
 
 const siteConfig = {
   title: 'Adrenaline', // Title for your website.
-  tagline: 'Adrenaline\'s tag line',
+  tagline: 'Give your Edge an Adrenaline Boost',
   url: 'https://adrenaline.xyz', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:

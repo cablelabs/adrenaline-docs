@@ -111,3 +111,6 @@ website/build/
 website/yarn.lock
 website/node_modules
 website/i18n/*
+
+# Mac OS X
+.DS_Store
