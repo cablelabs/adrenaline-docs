@@ -11,11 +11,19 @@
 // List of projects/orgs using your project for the users page.
 const users = [
   {
-    caption: 'User1',
+    caption: 'CableLabs',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/undraw_open_source.svg',
-    infoLink: 'https://www.facebook.com',
+    image: '/img/CableLabs_Logo_Red.png',
+    infoLink: 'https://www.cablelabs.com',
+    pinned: true,
+  },
+  {
+    caption: 'Altran',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/image.jpg'.
+    image: '/img/altran_logo.png',
+    infoLink: 'https://northamerica.altran.com/',
     pinned: true,
   },
 ];
@@ -44,7 +52,7 @@ const siteConfig = {
   ],
 
   // If you have users set above, you add it here:
-  // users,
+  users,
 
   /* path to images for header/footer */
   headerIcon: '',
