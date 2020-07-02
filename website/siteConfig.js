@@ -14,7 +14,7 @@ const users = [
     caption: 'CableLabs',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/White-Red_Logo.png',
+    image: '/img/CableLabs_Logo_Red.png',
     infoLink: 'https://www.cablelabs.com',
     pinned: true,
   },
