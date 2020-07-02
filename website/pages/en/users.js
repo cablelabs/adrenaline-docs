@@ -14,7 +14,7 @@ const Container = CompLibrary.Container;
 class Users extends React.Component {
   render() {
     const captionStyle = {
-      color: "green",
+      color: "blue",
       marginLeft: "-10px",
       marginTop: "-10px",
       fontFamily: "Arial"
@@ -32,15 +32,15 @@ class Users extends React.Component {
     const showcase = siteConfig.users.map(user => (
       <a href={user.infoLink} key={user.infoLink}>
         <img src={user.image} alt={user.caption} title={user.caption} />
-        <p style={companyInfo}>
-          {(() => {
-            switch (user.caption) {
-              case "CableLabs":   return "To develop transformative life-changing innovations that are globally adoptable, scalable, and move communities towards a more connected tomorrow.";
-              case "Altran": return "Altran is a global engineering and R&D services company. We focus on the latest technologies that determine a company's ability to compete on speed.";
-            }
-          })()}
-        </p>
-        {/*<p style={captionStyle}>{user.caption}</p>*/}
+        {/*<p style={companyInfo}>*/}
+        {/*  {(() => {*/}
+        {/*    switch (user.caption) {*/}
+        {/*      case "CableLabs":   return "To develop transformative life-changing innovations that are globally adoptable, scalable, and move communities towards a more connected tomorrow.";*/}
+        {/*      case "Altran": return "Altran is a global engineering and R&D services company. We focus on the latest technologies that determine a company's ability to compete on speed.";*/}
+        {/*    }*/}
+        {/*  })()}*/}
+        {/*</p>*/}
+        <p style={captionStyle}>{user.caption}</p>
       </a>
     ));
 

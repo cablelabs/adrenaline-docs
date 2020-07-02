@@ -23,7 +23,7 @@ const users = [
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/image.jpg'.
     image: '/img/altran_logo.png',
-    infoLink: 'https://en.wikipedia.org/wiki/Altran',
+    infoLink: 'https://northamerica.altran.com/',
     pinned: true,
   },
 ];
