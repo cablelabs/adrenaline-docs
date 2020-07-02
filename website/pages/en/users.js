@@ -20,7 +20,7 @@ class Users extends React.Component {
       fontFamily: "Arial"
     };
     const companyInfo = {
-      color: "green",
+      color: "black",
       fontFamily: "Arial"
     };
     const {config: siteConfig} = this.props;
