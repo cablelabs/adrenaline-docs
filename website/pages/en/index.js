@@ -105,12 +105,10 @@ class Index extends React.Component {
         {[
           {
             content:
-              'To make your landing page more attractive, use illustrations! Check out ' +
-              '[**unDraw**](https://undraw.co/) which provides you with customizable illustrations which are free to use. ' +
-              'The illustrations you see on this page are from unDraw.',
-            image: `${baseUrl}img/undraw_code_review.svg`,
+              'Time, space, and power are all critical for edge deployments. When you use accelerators such as FPGAs and GPUs, managing the low-level software (drivers) to run them can be a challenge. As part of our efforts around the Adrenaline project, we’ve shared tools to ease the management of hardware accelerators in Kubernetes. These tools are available .',
+            image: `${baseUrl}img/Open_Source.png`,
             imageAlign: 'left',
-            title: 'Wonderful SVG Illustrations',
+            title: 'Opensource',
           },
         ]}
       </Block>
@@ -121,10 +119,10 @@ class Index extends React.Component {
         {[
           {
             content:
-              'This is another description of how this project is useful',
-            image: `${baseUrl}img/undraw_note_list.svg`,
+              'Project Adrenaline only scratches the surface of what’s possible with accelerated edge computing. The uses for edge compute are vast and rapidly evolving. As you plan your edge strategy, be sure to include the capability to manage programmable accelerators and reduce your dependence on single-purpose ASICs. Deploying redundant and flexible platforms is a great way to reduce the time and expense of managing components at thousands or even millions of edge locations. We encourage you to share your experiences and help us add support for a broader set of accelerators. Find out how by checking out our  Getting Started> page.',
+            image: `${baseUrl}img/Get_Involved.png`,
             imageAlign: 'right',
-            title: 'Description',
+            title: 'Get Involved',
           },
         ]}
       </Block>
@@ -135,11 +133,13 @@ class Index extends React.Component {
         {[
           {
             content:
-              'Each new Docusaurus project has **randomly-generated** theme colors.',
-            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
+              ' Transform the network from a connectivity platform to a connectivity and compute platform with dynamic workload allocation.'
+              + 'Get flexibility in how you manage, run, and operate your network and support various workload requirements.'
+              + ' Edge computing, orchestration of virtualized applications, and acceleration together enable agile business methods that lead to optimal use of infrastructure to drive down costs, the ability to offer differentiating services that use edge capabilities, quicker time-to-market for new network and application features, and more flexibility to scale capacity up or down as required to meet customer needs.',
+            image: `${baseUrl}img/Why_Adrenaline.png`,
             imageAlign: 'right',
-            title: 'Randomly Generated Theme Colors',
-          },
+            title: 'Why Adrenaline ?',
+          }
         ]}
       </Block>
     );
@@ -148,22 +148,22 @@ class Index extends React.Component {
       <Block layout="fourColumn">
         {[
           {
-            content: 'This is the content of my feature',
-            image: `${baseUrl}img/undraw_react.svg`,
+            content: 'Reduce compute latency in applications by employing FPGAs and GPUs.',
+            image: `${baseUrl}img/Hardware_Acceleration.png`,
             imageAlign: 'top',
             title: 'Hardware Acceleration',
           },
           {
-            content: 'The content of my second feature',
-            image: `${baseUrl}img/undraw_operating_system.svg`,
+            content: 'Host virtualized and containerized network functions (VNFs/CNFs) at the edge for wired/wireless connectivity services and Over-the-Top (OTT) applications to enable low-latency.',
+            image: `${baseUrl}img/Edge_compute.png`,
             imageAlign: 'top',
             title: 'Edge Compute',
           },
           {
-            content: 'The content of my third feature',
-            image: `${baseUrl}img/undraw_operating_system.svg`,
+            content: 'Standard cloud-native orchestration using Kubernetes with support for the accelerator ecosystem across the network',
+            image: `${baseUrl}img/Centralized_Infras_Management.png`,
             imageAlign: 'top',
-            title: 'Centralizing Infrastructure Management',
+            title: 'Centralized Infrastructure Management',
           }
         ]}
       </Block>
