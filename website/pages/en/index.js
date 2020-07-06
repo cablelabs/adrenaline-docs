@@ -153,8 +153,8 @@ class Index extends React.Component {
             title: 'Hardware Acceleration',
           },
           {
-            content: 'Host virtualized and containerized network functions (VNFs/CNFs) at the edge for wired/wireless connectivity services and Over-the-Top (OTT) applications to enable low-latency.',
-            image: `${baseUrl}img/Edge_compute.png`,
+            content: 'Host applications at the edge to enable low-latency and Over-the-Top (OTT) applications to enable low-latency.',
+            image: `${baseUrl}img/Edge_Compute.png`,
             imageAlign: 'top',
             title: 'Edge Compute',
           },
