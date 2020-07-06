@@ -77,7 +77,6 @@ class Index extends React.Component {
   render() {
     const {config: siteConfig, language = ''} = this.props;
     const {baseUrl} = siteConfig;
-
     const Block = props => (
       <Container
         padding={['bottom', 'top']}
@@ -105,7 +104,7 @@ class Index extends React.Component {
         {[
           {
             content:
-              'Time, space, and power are all critical for edge deployments. When you use accelerators such as FPGAs and GPUs, managing the low-level software (drivers) to run them can be a challenge. As part of our efforts around the Adrenaline project, we’ve shared tools to ease the management of hardware accelerators in Kubernetes. These tools are available .',
+              'Time, space, and power are all critical for edge deployments. When you use accelerators such as FPGAs and GPUs, managing the low-level software (drivers) to run them can be a challenge. As part of our efforts around the Adrenaline project, we’ve shared tools to ease the management of hardware accelerators in Kubernetes. These tools are available https://github.com/cablelabs/adrenaline-docs.',
             image: `${baseUrl}img/Open_Source.png`,
             imageAlign: 'left',
             title: 'Opensource',
@@ -119,7 +118,7 @@ class Index extends React.Component {
         {[
           {
             content:
-              'Project Adrenaline only scratches the surface of what’s possible with accelerated edge computing. The uses for edge compute are vast and rapidly evolving. As you plan your edge strategy, be sure to include the capability to manage programmable accelerators and reduce your dependence on single-purpose ASICs. Deploying redundant and flexible platforms is a great way to reduce the time and expense of managing components at thousands or even millions of edge locations. We encourage you to share your experiences and help us add support for a broader set of accelerators. Find out how by checking out our  Getting Started> page.',
+              'Project Adrenaline only scratches the surface of what’s possible with accelerated edge computing. The uses for edge compute are vast and rapidly evolving. As you plan your edge strategy, be sure to include the capability to manage programmable accelerators and reduce your dependence on single-purpose ASICs. Deploying redundant and flexible platforms is a great way to reduce the time and expense of managing components at thousands or even millions of edge locations. We encourage you to share your experiences and help us add support for a broader set of accelerators. Find out how by checking out our Getting Started page.' ,
             image: `${baseUrl}img/Get_Involved.png`,
             imageAlign: 'right',
             title: 'Get Involved',
