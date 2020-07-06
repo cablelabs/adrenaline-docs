@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5da595e9-1a96-4d3a-b5ed-68c9972c7586" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/website/pages/en/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/pages/en/index.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1drwhEmh7vdMPadTnP9pRNm51oM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/website/static/img" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/website/static/img" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/website/static/img" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5da595e9-1a96-4d3a-b5ed-68c9972c7586" name="Default Changelist" comment="" />
+      <created>1593196636488</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593196636488</updated>
+      <workItem from="1593196638043" duration="3227000" />
+      <workItem from="1593534559170" duration="2126000" />
+      <workItem from="1593620543747" duration="1317000" />
+      <workItem from="1594058232100" duration="6052000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1652" y="30" width="1055" height="735" key="find.popup" timestamp="1594073229914">
+      <screen x="1440" y="-89" width="1920" height="1057" />
+    </state>
+    <state x="1652" y="-38" width="1055" height="735" key="find.popup/-1920.-157.1920.1057/0.23.1440.829/1440.-157.1920.1057@-1920.-157.1920.1057" timestamp="1593642750873" />
+    <state x="2105" y="4" width="586" height="735" key="find.popup/-1920.-157.1920.1057/0.23.1440.829/1440.-157.1920.1057@1440.-157.1920.1057" timestamp="1593629887625" />
+    <state x="-1708" y="30" width="1055" height="735" key="find.popup/-1920.-89.1920.1057/0.23.1440.829/1440.-89.1920.1057@-1920.-89.1920.1057" timestamp="1593718293598" />
+    <state x="1652" y="30" width="1055" height="735" key="find.popup/0.23.1440.829/-1920.-89.1920.1057/1440.-89.1920.1057@1440.-89.1920.1057" timestamp="1594073229914" />
+    <state x="-1255" y="64" width="586" height="735" key="find.popup/0.23.1440.829/-1920.-97.1920.1057/1440.-97.1920.1057@-1920.-97.1920.1057" timestamp="1593199394352" />
+  </component>
+</project>
