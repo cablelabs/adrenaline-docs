@@ -29,7 +29,7 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'Adrenaline', // Title for your website.
+  title: ' Adrenaline™ Project', // Title for your website.
   tagline: 'Give your Edge an Adrenaline Boost',
   url: 'https://adrenaline.xyz', // Your website URL
   baseUrl: '/', // Base URL for your project */
