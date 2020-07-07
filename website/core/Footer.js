@@ -49,12 +49,6 @@ class Footer extends React.Component {
             <a href={this.docUrl('communityInfo/community-info-license', this.props.language)}>
               License
             </a>
-            {/*<a href={this.docUrl('doc2.html', this.props.language)}>*/}
-            {/*  Guides (or other categories)*/}
-            {/*</a>*/}
-            {/*<a href={this.docUrl('doc3.html', this.props.language)}>*/}
-            {/*  API Reference (or other categories)*/}
-            {/*</a>*/}
           </div>
           <div>
             <h5>Community</h5>
@@ -80,7 +74,7 @@ class Footer extends React.Component {
             <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
             <a href="https://github.com/cablelabs/adrenaline-docs">GitHub</a>
             <a href={`${this.props.config.baseUrl}pdf/Adrenaline_solution_overview.pdf`} target = "_blank"> Adrenaline Flyer</a>
-            <a href="https://github.com/cablelabs/adrenaline-docs">Webinar</a>
+            {/*<a href="https://github.com/cablelabs/adrenaline-docs">Webinar</a>*/}
             <a href="https://github.com/cablelabs/adrenaline-docs">Whitepaper</a>
 
             <a
