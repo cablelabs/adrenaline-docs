@@ -63,7 +63,7 @@ class Footer extends React.Component {
             </a>
             {/*<a href="https://discordapp.com/">Project Chat</a>*/}
             <a
-              href="https://twitter.com/OpenAdrenaline"
+              href="https://www.linkedin.com/company/open-adrenaline/"
               target="_blank"
               rel="noreferrer noopener">
               LinkedIn
