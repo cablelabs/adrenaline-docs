@@ -27,7 +27,7 @@ function Help(props) {
       title: 'Browse Docs',
     },
     {
-      content: `Send an <a href = "mailto: snaps@cbalelabs.com">Inquiry</a>`,
+      content: `Send an <a href = "mailto: opensource@altran.com">Inquiry</a>`,
       title: 'Join the community',
     }
     // {
