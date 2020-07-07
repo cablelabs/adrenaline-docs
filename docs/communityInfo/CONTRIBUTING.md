@@ -6,7 +6,7 @@ sidebar_label: Contributing Guidelines
 
 # Contributing to Open Adrenaline
 
-First off, thanks for taking the time to contribute! :+1:
+First off, thanks for taking the time to contribute! 👍
 
 ## Code of Conduct
 
