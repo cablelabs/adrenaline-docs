@@ -2,6 +2,11 @@
   "docs": {
     "Guides": [
       "guides/getting-started"
+    ],
+    "Community Info": [
+      "communityInfo/community-info-coc",
+      "communityInfo/community-info-contributing",
+      "communityInfo/community-info-license"
     ]
   }
 }
