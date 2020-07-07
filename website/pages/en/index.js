@@ -76,7 +76,10 @@ class HomeSplash extends React.Component {
 class Index extends React.Component {
   render() {
     const {config: siteConfig, language = ''} = this.props;
-    const {baseUrl} = siteConfig;
+    const {baseUrl, docsUrl} = siteConfig;
+    const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
+    const langPart = `${language ? `${language}/` : ''}`;
+    const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
     const Block = props => (
       <Container
         padding={['bottom', 'top']}
@@ -114,11 +117,12 @@ class Index extends React.Component {
     );
 
     const Description = () => (
+
       <Block background="dark">
         {[
           {
             content:
-              'The Adrenaline Project only scratches the surface of what’s possible with accelerated edge computing. The uses for edge compute are vast and rapidly evolving. As you plan your edge strategy, be sure to include the capability to manage programmable accelerators and reduce your dependence on single-purpose ASICs. Deploying redundant and flexible platforms is a great way to reduce the time and expense of managing components at thousands or even millions of edge locations. We encourage you to share your experiences and help us add support for a broader set of accelerators. Find out how by checking out our Getting Started page.' ,
+              `The Adrenaline Project only scratches the surface of what’s possible with accelerated edge computing. The uses for edge compute are vast and rapidly evolving. As you plan your edge strategy, be sure to include the capability to manage programmable accelerators and reduce your dependence on single-purpose ASICs. Deploying redundant and flexible platforms is a great way to reduce the time and expense of managing components at thousands or even millions of edge locations. We encourage you to share your experiences and help us add support for a broader set of accelerators.Find out how by checking out our <a href = ${docUrl( 'guides/getting-started', )}>Getting Started</a> page.` ,
             image: `${baseUrl}img/Get_Involved.png`,
             imageAlign: 'right',
             title: 'Get Involved',
