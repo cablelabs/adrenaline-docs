@@ -118,7 +118,7 @@ class Index extends React.Component {
         {[
           {
             content:
-              'Project Adrenaline only scratches the surface of what’s possible with accelerated edge computing. The uses for edge compute are vast and rapidly evolving. As you plan your edge strategy, be sure to include the capability to manage programmable accelerators and reduce your dependence on single-purpose ASICs. Deploying redundant and flexible platforms is a great way to reduce the time and expense of managing components at thousands or even millions of edge locations. We encourage you to share your experiences and help us add support for a broader set of accelerators. Find out how by checking out our Getting Started page.' ,
+              'The Adrenaline Project only scratches the surface of what’s possible with accelerated edge computing. The uses for edge compute are vast and rapidly evolving. As you plan your edge strategy, be sure to include the capability to manage programmable accelerators and reduce your dependence on single-purpose ASICs. Deploying redundant and flexible platforms is a great way to reduce the time and expense of managing components at thousands or even millions of edge locations. We encourage you to share your experiences and help us add support for a broader set of accelerators. Find out how by checking out our Getting Started page.' ,
             image: `${baseUrl}img/Get_Involved.png`,
             imageAlign: 'right',
             title: 'Get Involved',
@@ -137,7 +137,7 @@ class Index extends React.Component {
               + ' Edge computing, orchestration of virtualized applications, and acceleration together enable agile business methods that lead to optimal use of infrastructure to drive down costs, the ability to offer differentiating services that use edge capabilities, quicker time-to-market for new network and application features, and more flexibility to scale capacity up or down as required to meet customer needs.',
             image: `${baseUrl}img/Why_Adrenaline.png`,
             imageAlign: 'right',
-            title: 'Why Adrenaline ?',
+            title: 'Why the Adrenaline Project ?',
           }
         ]}
       </Block>
