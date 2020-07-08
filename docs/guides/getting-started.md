@@ -6,7 +6,7 @@ sidebar_label: Getting Started
 
 # Adrenaline
 
-Adrenaline is part of the SNAPS<sup>TM</sup> Program we are developing at
+Adrenaline is part of the SNAPS™ Program we are developing at
 [CableLabs](http://cablelabs.com/) and [Altran](http://altran.com/)
 to automate the installation of an open hardware platform with accelerators,
 including GPU and FPGA cards. It leverages
