@@ -31,7 +31,7 @@ class Users extends React.Component {
     const editUrl = `${siteConfig.repoUrl}/edit/master/website/siteConfig.js`;
     const showcase = siteConfig.users.map(user => (
       <a href={user.infoLink} key={user.infoLink}>
-        <img src={user.image} alt={user.caption} title={user.caption} />
+        <img src={user.image} alt={user.altText} title={user.altText} />
         {/*<p style={companyInfo}>*/}
         {/*  {(() => {*/}
         {/*    switch (user.caption) {*/}
@@ -49,7 +49,7 @@ class Users extends React.Component {
         <Container padding={['bottom', 'top']}>
           <div className="showcaseSection">
             <div className="prose">
-              <h1>Who is using Adrenaline ? </h1>
+              <h1>Who is using The Adrenaline™ Project?</h1>
               {/*<p>This project is used by many folks</p>*/}
             </div>
             <div className="logos">{showcase}</div>

@@ -11,7 +11,7 @@
 // List of projects/orgs using your project for the users page.
 const users = [
   {
-    caption: 'CableLabs',
+    altText: 'CableLabs',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/image.jpg'.
     image: '/img/CableLabs_Logo_Red.png',
@@ -19,7 +19,7 @@ const users = [
     pinned: true,
   },
   {
-    caption: 'Altran',
+    altText: 'Altran',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/image.jpg'.
     image: '/img/altran_logo.png',
@@ -29,7 +29,7 @@ const users = [
 ];
 
 const siteConfig = {
-  title: ' Adrenaline™ Project', // Title for your website.
+  title: 'Adrenaline™ Project', // Title for your website.
   tagline: 'Give your Edge an Adrenaline Boost',
   url: 'https://adrenaline.xyz', // Your website URL
   baseUrl: '/', // Base URL for your project */
