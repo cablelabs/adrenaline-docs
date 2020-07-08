@@ -6,8 +6,55 @@
  */
 
 const React = require('react');
+const CookieConsent = require("react-cookie-consent");
+// const styles = require('./../static/css/custom.css')
+const cookieBanner = {
+  position: 'fixed',
+  bottom: '40px',
+  left: '10%',
+  right: '10%',
+  width: '80%',
+  padding: '5px 14px',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'space-between',
+  backgroundColor: '#0c0606',
+  borderRadius: '5px',
+  boxShadow: '0 0 2px 1px rgba(0, 0, 0, 0.2)'
+};
+const fadeOut = {
+  opacity:'0',
+  width:'0',
+  height:'0',
+  transition: 'width 0.5s 0.5s, height 0.5s 0.5s, opacity 0.5s'
+}
+const fadeIn = {
+  opacity:'1',
+  width:'100px',
+  height:'100px',
+  transition: 'width 0.5s, height 0.5s, opacity 0.5s 0.5s'
+}
 
 class Footer extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      showingAlert: false
+    }
+  }
+
+  handleClickShowAlert() {
+    this.setState({
+      showingAlert: true
+    });
+
+    setTimeout(() => {
+      this.setState({
+        showingAlert: false
+      });
+    }, 2000);
+  }
+
   docUrl(doc, language) {
     const baseUrl = this.props.config.baseUrl;
     const docsUrl = this.props.config.docsUrl;
@@ -20,7 +67,19 @@ class Footer extends React.Component {
     const baseUrl = this.props.config.baseUrl;
     return baseUrl + (language ? `${language}/` : '') + doc;
   }
+  cookieConsentHandler () {
+    console.log('\n localStorage : ' + JSON.stringify(localStorage))
+    console.log('\n showingAlert : ' + JSON.stringify(this.state.showingAlert))
+    if (localStorage.getItem('cookieSeen') != 'shown') {
+      // this.refs['cookie-banner'].delay(2000).fadeIn();
+      localStorage.setItem('cookieSeen','shown')
+    }
+    this.setState({
+      showingAlert: false
+    });
+    // this.refs['cookie-banner'].fadeOut();
 
+  }
   render() {
     return (
       <footer className="nav-footer" id="footer">
@@ -125,6 +184,43 @@ class Footer extends React.Component {
           />
         </a> */}
         <section className="copyright">{this.props.config.copyright}</section>
+        <div className={ this.state.showingAlert?`${fadeIn}`:`${fadeOut}`}>
+          <div id='cookie-banner'  style={{
+            position: 'fixed',
+            bottom: '20px',
+            left: '25%',
+            right: '25%',
+            width: '50%',
+            margin:'20px',
+            padding: '15px 15px 15px 15px',
+            display: 'flex',
+            alignItems: 'left',
+            justifyContent: 'space-evenly',
+            backgroundColor: '#070303',
+            color: 'white',
+            borderRadius: '5px',
+            fontSize:'15px',
+            fontFamily: 'soleto,sans-serif',
+            lineHeight: '1.25em',
+            boxShadow: '0 0 2px 1px rgba(0, 0, 0, 0.2)'
+          }}>
+            <p style={{
+              marginTop:'15px'
+            }}>CableLabs.com uses cookies to provide you the best experience. <a style={{color:'grey'}} href="https://www.cablelabs.com/privacy-policy" target="_blank">Learn More</a></p>.
+            <button id='close' type="button" style={{
+              backgroundColor: 'red',
+              border: 'none',
+              color: 'white',
+              padding: '15px 32px',
+              textAlign: 'center',
+              textDecoration: 'none',
+              display: 'inline-block',
+              fontSize: '15px',
+              margin: '4px 2px',
+              cursor: 'pointer'
+            }} onClick={this.cookieConsentHandler.bind(this)}>Got It!</button>
+          </div>
+        </div>
       </footer>
     );
   }
