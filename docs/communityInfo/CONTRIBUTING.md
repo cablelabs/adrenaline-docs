@@ -75,5 +75,5 @@ Some useful resources to get started:
 - Project [README][11]
 - [Open Adrenaline License][12]
 
-[11]: README.md
-[12]: LICENSE
+[11]: https://github.com/cablelabs/adrenaline-docs/blob/dev/README.md
+[12]: LICENSE.md
