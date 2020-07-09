@@ -11,18 +11,26 @@
 // List of projects/orgs using your project for the users page.
 const users = [
   {
-    caption: 'User1',
+    altText: 'CableLabs',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/undraw_open_source.svg',
-    infoLink: 'https://www.facebook.com',
+    image: '/img/CableLabs_Logo_Red.png',
+    infoLink: 'https://www.cablelabs.com',
+    pinned: true,
+  },
+  {
+    altText: 'Altran',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/image.jpg'.
+    image: '/img/altran_logo.png',
+    infoLink: 'https://northamerica.altran.com/',
     pinned: true,
   },
 ];
 
 const siteConfig = {
-  title: 'Adrenaline', // Title for your website.
-  tagline: 'Adrenaline\'s tag line',
+  title: 'Adrenaline™ Project', // Title for your website.
+  tagline: 'Give your Edge an Adrenaline Boost',
   url: 'https://adrenaline.xyz', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -38,19 +46,18 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'doc1', label: 'Docs'},
-    {doc: 'doc4', label: 'API'},
+    {doc: 'guides/getting-started', label: 'Docs'},
     {page: 'help', label: 'Help'},
     {blog: true, label: 'Blog'},
   ],
 
   // If you have users set above, you add it here:
-  // users,
+  users,
 
   /* path to images for header/footer */
   headerIcon: '',
-  footerIcon: 'img/favicon.png',
-  favicon: 'img/favicon.png',
+  footerIcon: 'img/adrenaline-04.svg',
+  favicon: 'img/adrenaline_favicon.png',
 
   /* Colors for website */
   colors: {
@@ -73,7 +80,7 @@ const siteConfig = {
   */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} CableLabs and Altran`,
+  copyright: `Copyright © ${new Date().getFullYear()} CableLabs and Altran by Capgemini `,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
@@ -104,7 +111,9 @@ const siteConfig = {
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
-  //   repoUrl: 'https://github.com/facebook/test-site',
+    repoUrl: 'https://github.com/cablelabs/adrenaline-docs',
+   gaTrackingId: 'UA-171988421-1',
+   gaGtag: true
 };
 
 module.exports = siteConfig;

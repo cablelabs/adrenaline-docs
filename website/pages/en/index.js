@@ -60,13 +60,12 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}img/undraw_monitor.svg`} />
+        <Logo img_src={`${baseUrl}img/Adrenaline_logo_purple.png`} />
         <div className="inner">
           <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
           <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('doc1.html')}>Example Link</Button>
-            <Button href={docUrl('doc2.html')}>Example Link 2</Button>
+            <Button href={docUrl("guides/getting-started")}>Get Started</Button>
+            <Button href={siteConfig.repoUrl}>Github</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -77,15 +76,17 @@ class HomeSplash extends React.Component {
 class Index extends React.Component {
   render() {
     const {config: siteConfig, language = ''} = this.props;
-    const {baseUrl} = siteConfig;
-
+    const {baseUrl, docsUrl} = siteConfig;
+    const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
+    const langPart = `${language ? `${language}/` : ''}`;
+    const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
     const Block = props => (
       <Container
         padding={['bottom', 'top']}
         id={props.id}
         background={props.background}>
         <GridBlock
-          align="center"
+          align={props.align}
           contents={props.children}
           layout={props.layout}
         />
@@ -106,26 +107,25 @@ class Index extends React.Component {
         {[
           {
             content:
-              'To make your landing page more attractive, use illustrations! Check out ' +
-              '[**unDraw**](https://undraw.co/) which provides you with customizable illustrations which are free to use. ' +
-              'The illustrations you see on this page are from unDraw.',
-            image: `${baseUrl}img/undraw_code_review.svg`,
+              'Time, space, and power are all critical for edge deployments. When you use accelerators such as FPGAs and GPUs, managing the low-level software (drivers) to run them can be a challenge. As part of our efforts around The Adrenaline™ Project, we’ve shared tools to ease the management of hardware accelerators in Kubernetes.',
+            image: `${baseUrl}img/Open_Source.png`,
             imageAlign: 'left',
-            title: 'Wonderful SVG Illustrations',
+            title: 'Open Source',
           },
         ]}
       </Block>
     );
 
     const Description = () => (
+
       <Block background="dark">
         {[
           {
             content:
-              'This is another description of how this project is useful',
-            image: `${baseUrl}img/undraw_note_list.svg`,
+              `The Adrenaline™ Project only scratches the surface of what’s possible with accelerated edge computing. The uses for edge compute are vast and rapidly evolving. As you plan your edge strategy, be sure to include the capability to manage programmable accelerators and reduce your dependence on single-purpose ASICs. Deploying redundant and flexible platforms is a great way to reduce the time and expense of managing components at thousands or even millions of edge locations. We encourage you to share your experiences and help us add support for a broader set of accelerators. Find out how by checking out our <a href = ${docUrl( 'guides/getting-started', )}>Getting Started</a> page.` ,
+            image: `${baseUrl}img/Get_Involved.png`,
             imageAlign: 'right',
-            title: 'Description',
+            title: 'Get Involved',
           },
         ]}
       </Block>
@@ -136,30 +136,38 @@ class Index extends React.Component {
         {[
           {
             content:
-              'Each new Docusaurus project has **randomly-generated** theme colors.',
-            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
+              ' Transform the network from a connectivity platform to a connectivity and compute platform with dynamic workload allocation.'
+              + ' Get flexibility in how you manage, run, and operate your network and support various workload requirements.'
+              + ' Edge computing, orchestration of virtualized applications, and acceleration together enable agile business methods that lead to optimal use of infrastructure to drive down costs, the ability to offer differentiating services that use edge capabilities, quicker time-to-market for new network and application features, and more flexibility to scale capacity up or down as required to meet customer needs.',
+            image: `${baseUrl}img/Why_Adrenaline.png`,
             imageAlign: 'right',
-            title: 'Randomly Generated Theme Colors',
-          },
+            title: 'Why the Adrenaline™ Project?',
+          }
         ]}
       </Block>
     );
 
     const Features = () => (
-      <Block layout="fourColumn">
+      <Block layout="fourColumn" align="center">
         {[
           {
-            content: 'This is the content of my feature',
-            image: `${baseUrl}img/undraw_react.svg`,
+            content: 'Reduce compute latency in applications by employing FPGAs and GPUs.',
+            image: `${baseUrl}img/Hardware_Acceleration.png`,
             imageAlign: 'top',
-            title: 'Feature One',
+            title: 'Hardware Acceleration',
           },
           {
-            content: 'The content of my second feature',
-            image: `${baseUrl}img/undraw_operating_system.svg`,
+            content: 'Host applications at the edge to enable low-latency.',
+            image: `${baseUrl}img/Edge_Compute.png`,
             imageAlign: 'top',
-            title: 'Feature Two',
+            title: 'Edge Compute',
           },
+          {
+            content: ' Standard cloud-native orchestration using Kubernetes with support for the accelerator ecosystem across the network.',
+            image: `${baseUrl}img/Centralized_Infras_Management.png`,
+            imageAlign: 'top',
+            title: 'Centralized Infrastructure Management',
+          }
         ]}
       </Block>
     );
@@ -182,7 +190,7 @@ class Index extends React.Component {
       return (
         <div className="productShowcaseSection paddingBottom">
           <h2>Who is Using This?</h2>
-          <p>This project is used by all these people</p>
+          <p>The Adrenaline™ Project is used by </p>
           <div className="logos">{showcase}</div>
           <div className="more-users">
             <a className="button" href={pageUrl('users.html')}>
@@ -198,11 +206,11 @@ class Index extends React.Component {
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
           <Features />
-          <FeatureCallout />
+          {/*<FeatureCallout />*/}
           <LearnHow />
           <TryOut />
           <Description />
-          <Showcase />
+          {/*<Showcase />*/}
         </div>
       </div>
     );
