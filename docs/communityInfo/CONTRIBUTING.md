@@ -72,7 +72,7 @@ git push origin my-dev-branch
 ## Resources
 
 Some useful resources to get started:
-- Getting Started [11]
+- [Getting Started][11]
 - [Open Adrenaline License][12]
 
 [11]: https://github.com/cablelabs/adrenaline-docs/blob/dev/docs/guides/getting-started.md
