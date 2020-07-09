@@ -6,53 +6,17 @@
  */
 
 const React = require('react');
-const CookieConsent = require("react-cookie-consent");
-// const styles = require('./../static/css/custom.css')
-const cookieBanner = {
-  position: 'fixed',
-  bottom: '40px',
-  left: '10%',
-  right: '10%',
-  width: '80%',
-  padding: '5px 14px',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'space-between',
-  backgroundColor: '#0c0606',
-  borderRadius: '5px',
-  boxShadow: '0 0 2px 1px rgba(0, 0, 0, 0.2)'
-};
-const fadeOut = {
-  opacity:'0',
-  width:'0',
-  height:'0',
-  transition: 'width 0.5s 0.5s, height 0.5s 0.5s, opacity 0.5s'
-}
-const fadeIn = {
-  opacity:'1',
-  width:'100px',
-  height:'100px',
-  transition: 'width 0.5s, height 0.5s, opacity 0.5s 0.5s'
-}
+import $ from 'jquery'
+var ls = require('local-storage');
+
 
 class Footer extends React.Component {
   constructor(props) {
     super(props)
+    this.cookieConsentHandler = this.cookieConsentHandler.bind(this)
     this.state = {
-      showingAlert: false
+      showCookie: true
     }
-  }
-
-  handleClickShowAlert() {
-    this.setState({
-      showingAlert: true
-    });
-
-    setTimeout(() => {
-      this.setState({
-        showingAlert: false
-      });
-    }, 2000);
   }
 
   docUrl(doc, language) {
@@ -67,20 +31,16 @@ class Footer extends React.Component {
     const baseUrl = this.props.config.baseUrl;
     return baseUrl + (language ? `${language}/` : '') + doc;
   }
-  cookieConsentHandler () {
-    console.log('\n localStorage : ' + JSON.stringify(localStorage))
-    console.log('\n showingAlert : ' + JSON.stringify(this.state.showingAlert))
-    if (localStorage.getItem('cookieSeen') != 'shown') {
-      // this.refs['cookie-banner'].delay(2000).fadeIn();
-      localStorage.setItem('cookieSeen','shown')
-    }
-    this.setState({
-      showingAlert: false
-    });
-    // this.refs['cookie-banner'].fadeOut();
+   cookieConsentHandler () {
+     // Set cookie and state
+     ls.set ( 'cookieSeen' , 'shown' )
+     this.setState ( { showCookie : false } , () => {} );
+   }
 
-  }
+  componentDidUpdate(){}
+
   render() {
+    const { showCookie } =  this.state
     return (
       <footer className="nav-footer" id="footer">
         <section className="sitemap">
@@ -185,8 +145,9 @@ class Footer extends React.Component {
           />
         </a> */}
         <section className="copyright">{this.props.config.copyright}</section>
-        <div className={ this.state.showingAlert?`${fadeIn}`:`${fadeOut}`}>
+        <div id="mainBanner" ref='mainBanner'>
           <div id='cookie-banner'  style={{
+            visibility: this.state.showCookie == false ? 'hidden':'visible',
             position: 'fixed',
             bottom: '20px',
             left: '25%',
@@ -208,7 +169,8 @@ class Footer extends React.Component {
             <p style={{
               marginTop:'15px'
             }}>CableLabs.com uses cookies to provide you the best experience. <a style={{color:'grey'}} href="https://www.cablelabs.com/privacy-policy" target="_blank">Learn More</a></p>.
-            <button id='close' type="button" style={{
+            <div>
+            <button  onClick={this.cookieConsentHandler()} style={{
               backgroundColor: 'red',
               border: 'none',
               color: 'white',
@@ -219,7 +181,8 @@ class Footer extends React.Component {
               fontSize: '15px',
               margin: '4px 2px',
               cursor: 'pointer'
-            }} onClick={this.cookieConsentHandler.bind(this)}>Got It!</button>
+            }}>Got It!</button>
+            </div>
           </div>
         </div>
       </footer>
