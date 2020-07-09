@@ -110,7 +110,7 @@ class Index extends React.Component {
               'Time, space, and power are all critical for edge deployments. When you use accelerators such as FPGAs and GPUs, managing the low-level software (drivers) to run them can be a challenge. As part of our efforts around The Adrenaline™ Project, we’ve shared tools to ease the management of hardware accelerators in Kubernetes.',
             image: `${baseUrl}img/Open_Source.png`,
             imageAlign: 'left',
-            title: 'Opensource',
+            title: 'Open Source',
           },
         ]}
       </Block>
