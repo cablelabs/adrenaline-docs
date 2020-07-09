@@ -55,7 +55,7 @@ template text into your pull request.
 [7]: https://help.github.com/articles/about-pull-requests/
 [8]: https://github.com/cablelabs/adrenaline-docs
 [9]: https://github.com/cablelabs/adrenaline-docs/compare
-[10]: PULL_REQUEST_TEMPLATE.md
+[10]: https://github.com/cablelabs/adrenaline-docs/blob/master/PULL_REQUEST_TEMPLATE.md
 
 #### Sample Pull Request Commands
 
