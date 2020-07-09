@@ -10,5 +10,9 @@
   },
   "devDependencies": {
     "docusaurus": "^1.14.4"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "local-storage": "^2.0.0"
   }
 }

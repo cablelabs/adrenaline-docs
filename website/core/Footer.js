@@ -6,8 +6,19 @@
  */
 
 const React = require('react');
+import $ from 'jquery'
+var ls = require('local-storage');
+
 
 class Footer extends React.Component {
+  constructor(props) {
+    super(props)
+    this.cookieConsentHandler = this.cookieConsentHandler.bind(this)
+    this.state = {
+      showCookie: true
+    }
+  }
+
   docUrl(doc, language) {
     const baseUrl = this.props.config.baseUrl;
     const docsUrl = this.props.config.docsUrl;
@@ -20,8 +31,16 @@ class Footer extends React.Component {
     const baseUrl = this.props.config.baseUrl;
     return baseUrl + (language ? `${language}/` : '') + doc;
   }
+   cookieConsentHandler () {
+     // Set cookie and state
+     ls.set ( 'cookieSeen' , 'shown' )
+     this.setState ( { showCookie : false } , () => {} );
+   }
+
+  componentDidUpdate(){}
 
   render() {
+    const { showCookie } =  this.state
     return (
       <footer className="nav-footer" id="footer">
         <section className="sitemap">
@@ -126,6 +145,46 @@ class Footer extends React.Component {
           />
         </a> */}
         <section className="copyright">{this.props.config.copyright}</section>
+        <div id="mainBanner" ref='mainBanner'>
+          <div id='cookie-banner'  style={{
+            visibility: this.state.showCookie == false ? 'hidden':'visible',
+            position: 'fixed',
+            bottom: '20px',
+            left: '25%',
+            right: '25%',
+            width: '50%',
+            margin:'20px',
+            padding: '15px 15px 15px 15px',
+            display: 'flex',
+            alignItems: 'left',
+            justifyContent: 'space-evenly',
+            backgroundColor: '#070303',
+            color: 'white',
+            borderRadius: '5px',
+            fontSize:'15px',
+            fontFamily: 'soleto,sans-serif',
+            lineHeight: '1.25em',
+            boxShadow: '0 0 2px 1px rgba(0, 0, 0, 0.2)'
+          }}>
+            <p style={{
+              marginTop:'15px'
+            }}>CableLabs.com uses cookies to provide you the best experience. <a style={{color:'grey'}} href="https://www.cablelabs.com/privacy-policy" target="_blank">Learn More</a></p>.
+            <div>
+            <button  onClick={this.cookieConsentHandler()} style={{
+              backgroundColor: 'red',
+              border: 'none',
+              color: 'white',
+              padding: '15px 32px',
+              textAlign: 'center',
+              textDecoration: 'none',
+              display: 'inline-block',
+              fontSize: '15px',
+              margin: '4px 2px',
+              cursor: 'pointer'
+            }}>Got It!</button>
+            </div>
+          </div>
+        </div>
       </footer>
     );
   }
