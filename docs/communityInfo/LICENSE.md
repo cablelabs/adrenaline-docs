@@ -144,7 +144,7 @@ file or class name and description of purpose be included on the
 same "printed page" as the copyright notice for easier
 identification within third-party archives.
 
-    Copyright [xxx] [name of copyright owner]
+    Copyright 2018 ARICENT HOLDINGS LUXEMBOURG S.à.r.l. and Cable Television Laboratories, Inc.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
